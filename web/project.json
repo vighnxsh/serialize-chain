@@ -1,0 +1,51 @@
+{
+  "name": "preset-next",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "preset-next",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/preset-next"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "preset-next"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "preset-next:build",
+        "dev": true,
+        "port": 3000
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "preset-next:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "preset-next:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "preset-next:build:production"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
