@@ -4,8 +4,8 @@ import * as web3 from '@solana/web3.js';
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { toast } from 'react-toastify';
 
-import { StudentIntroReference } from '../models/serialize/StudentIntroReference';
-import { StudentIntroCoordinatorReference } from '../scripts/StudentIntroCoordinatorReference'
+import { StudentIntroReference } from '../web/models/serialize/StudentIntroReference';
+import { StudentIntroCoordinatorReference } from '../web/scripts/StudentIntroCoordinatorReference'
 
 
 const Finished: FC = () => {
