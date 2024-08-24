@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "nx build preset-next",
+    "build": "next build",
     "dev": "nx serve preset-next"
   },
   "private": true,
