@@ -1,6 +1,11 @@
 {
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"]
+    },
     "jsx": "preserve",
     "allowJs": true,
     "esModuleInterop": true,
@@ -15,7 +20,7 @@
       {
         "name": "next"
       }
-    ]
+    ],
   },
   "include": [
     "**/*.ts",
