@@ -1,7 +1,7 @@
 import bs58 from 'bs58'
 import * as web3 from '@solana/web3.js'
 
-import { StudentIntroReference } from '../../models/serialize/StudentIntroReference'
+import { StudentIntroReference } from '../models/serialize/StudentIntroReference'
 
 
 const STUDENT_INTRO_PROGRAM_ID = 'HdE95RSVsdb315jfJtaykXhXY478h53X6okDupVfY9yf'
