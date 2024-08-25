@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import * as web3 from '@solana/web3.js';
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { toast } from 'react-toastify';
-
+import Link from 'next/link'
 import { StudentIntroReference } from '../models/serialize/StudentIntroReference';
 import { StudentIntroCoordinatorReference } from '../scripts/StudentIntroCoordinatorReference'
 
@@ -111,6 +111,9 @@ const Finished: FC = () => {
 
     return (
         <main className='min-h-screen text-white pt-32'>
+            <div className='text-4xl white'>
+ <Link href='/token'> Click here Mint tokens and create Accounts</Link>
+            </div>
             {/* FORM */}
             <section className='grid grid-cols-1 sm:grid-cols-6 gap-4 p-4'>
                 <form className='rounded-lg min-h-content p-4 bg-[#2a302f] sm:col-span-6 lg:col-start-2 lg:col-end-6'>
