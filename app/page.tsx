@@ -111,8 +111,11 @@ const Finished: FC = () => {
 
     return (
         <main className='min-h-screen text-white pt-32'>
-            <div className='text-4xl white'>
- <Link href='/token'> Click here Mint tokens and create Accounts</Link>
+            <div className='text-3xl white flex flex-col font-semibold items-center justify-center gap-y-2 '>
+ <Link href='/token' className='hover:text-blue-300'> Mint tokens </Link>
+ <Link href='/nft' className='hover:text-blue-300'> Create CNFTs</Link>
+ <Link href='/movie' className='hover:text-blue-300'> Movie  review</Link>
+ <Link href='/viewer' className='hover:text-blue-300'>Txn viewer</Link>
             </div>
             {/* FORM */}
             <section className='grid grid-cols-1 sm:grid-cols-6 gap-4 p-4'>
